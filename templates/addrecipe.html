@@ -1,0 +1,51 @@
+{% extends 'base.html'%}
+{% block content %}
+
+<h3>Add Recipe</h3>
+
+<div class="row">
+    <form action="" method="POST" class="col s12">
+        <div class="row">
+            <div class="input-field col s12">
+                <i class="material-icons prefix">cake</i>
+                <select id="recipe_category" name="recipe_category">
+                  <option value="" disabled selected>Choose category</option>
+                  {% for rec in RecipeCategories %}
+                      <option value="{{rec.recipe_category}}">{{rec.recipe_category}}</option>
+                  {% endfor %}
+                </select>
+                <label>Recipe Category</label>
+            </div>
+        </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <i class="material-icons prefix">room_service</i>
+          <input id="recipe_name" name="recipe_name" type="text" class="validate">
+          <label for="icon_prefix">Recipe Name</label>
+        </div>
+        <div class="input-field col s12">
+          <i class="material-icons prefix">info</i>
+          <input id="recipe_ingredients" name="recipe_ingredients" type="text" class="validate">
+          <label for="icon_telephone">Ingredients</label>
+        </div>
+        <div class="input-field col s12">
+          <i class="material-icons prefix">shopping_basket</i>
+          <input id="recipe_method" name="recipe_method" type="text" class="validate">
+          <label for="icon_telephone">Method</label>
+        </div>
+        <div class="input-field col s12">
+          <i class="material-icons prefix">schedule</i>
+          <input id="recipe_prep_and_cook_time" name="recipe_prep_and_cook_time" type="text" class="validate">
+          <label for="icon_telephone">Prep and Cook Time</label>
+        </div>
+        <div class="input-field col s12">
+          <i class="material-icons prefix">local_airport</i>
+          <input id="cuisine" name="cuisine" type="text" class="validate">
+          <label for="icon_telephone">Cuisine</label>
+        </div>
+      </div>
+    </form>
+  </div>
+        
+
+{% endblock %}
