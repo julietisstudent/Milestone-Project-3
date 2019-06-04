@@ -1,0 +1,9 @@
+body{
+    background-color: pink;
+} 
+
+.btn-small {
+    margin: 5px;
+    padding: 10px;
+    line-height: 0.9em;
+}

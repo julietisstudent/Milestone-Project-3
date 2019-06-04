@@ -1,7 +1,7 @@
 {% extends 'base.html'%}
 {% block content %}
 
-<h3>Add Recipe</h3>
+<h3>Edit Recipe</h3>
 
 <div class="row">
     <form action="{{ url_for('insert_recipe') }}" method="POST" class="col s12">
@@ -9,9 +9,13 @@
             <div class="input-field col s12">
                 <i class="material-icons prefix">cake</i>
                 <select id="recipe_category" name="recipe_category">
-                  <option value="" disabled selected>Choose category</option>
+                <option value="" disabled selected>Choose category</option>
                   {% for rec in RecipeCategories %}
+                      {% if rec.recipe_category == recipe.recipe_category%}
+                      <option value="{{rec.recipe_category}}" selected>{{rec.recipe_category}}</option>
+                      {% else %}
                       <option value="{{rec.recipe_category}}">{{rec.recipe_category}}</option>
+                     {% endif %} 
                   {% endfor %}
                 </select>
                 <label>Recipe Category</label>
@@ -20,32 +24,32 @@
       <div class="row">
         <div class="input-field col s12">
           <i class="material-icons prefix">room_service</i>
-          <input id="recipe_name" name="recipe_name" type="text" class="validate">
+          <input id="recipe_name" name="recipe_name" type="text" class="validate" value="{{recipe.recipe_name}}">
           <label for="icon_prefix">Recipe Name</label>
         </div>
         <div class="input-field col s12">
           <i class="material-icons prefix">info</i>
-          <input id="recipe_ingredients" name="recipe_ingredients" type="text" class="validate">
+          <input id="recipe_ingredients" name="recipe_ingredients" type="text" class="validate" value="{{recipe.recipe_ingredients}}">
           <label for="icon_telephone">Ingredients</label>
         </div>
         <div class="input-field col s12">
           <i class="material-icons prefix">shopping_basket</i>
-          <input id="recipe_method" name="recipe_method" type="text" class="validate">
+          <input id="recipe_method" name="recipe_method" type="text" class="validate" value="{{recipe.recipe_method}}">
           <label for="icon_telephone">Method</label>
         </div>
         <div class="input-field col s12">
           <i class="material-icons prefix">schedule</i>
-          <input id="recipe_prep_and_cook_time" name="recipe_prep_and_cook_time" type="text" class="validate">
+          <input id="recipe_prep_and_cook_time" name="recipe_prep_and_cook_time" type="text" class="validate" value="{{recipe.recipe_prep_and_cook_time}}">
           <label for="icon_telephone">Prep and Cook Time</label>
         </div>
         <div class="input-field col s12">
           <i class="material-icons prefix">local_airport</i>
-          <input id="cuisine" name="cuisine" type="text" class="validate">
+          <input id="cuisine" name="cuisine" type="text" class="validate" value="{{recipe.cuisine}}">
           <label for="icon_telephone">Cuisine</label>
         </div>
       </div>
       <div class="row">
-        <button class="btn waves-effect waves-light" type="submit" name="action">Add Recipe
+        <button class="btn waves-effect waves-light" type="submit" name="action">Edit Recipe
           <i class="material-icons right">create</i>
         </button>
       </div>

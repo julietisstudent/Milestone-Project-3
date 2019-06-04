@@ -5,14 +5,14 @@
 <ul class="collapsible" data-collapsible="accordion">
    {% for recipe in recipes %}
     <li>
-      <div class="collapsible-header"><i class="material-icons">cake</i>Recipe Category
-      </div>
+      <div class="collapsible-header"><i class="material-icons">cake</i>Recipe Category</div>
       <div class="collapsible-body"><span>{{recipe.recipe_category}}</span></span></div>
-    </li>
+     </li>
    
     <li>
       <div class="collapsible-header"><i class="material-icons">room_service</i>Recipe Name</div>
       <div class="collapsible-body"><span>{{recipe.recipe_name}}</span></div>
+      <a href="{{url_for('edit_recipe', recipe_id=recipe._id)}}" class="waves-effect waves-light btn btn-small">Edit Recipe</a>
     </li>
     
     <li>
