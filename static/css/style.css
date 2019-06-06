@@ -2,6 +2,21 @@ body{
     background-color: pink;
 } 
 
+h1{
+   font-family: 'Ruge Boogie', cursive;
+   text-align:center; 
+}
+
+p{
+    text-align: center;
+    font-style: italic;
+}
+
+img.responsive-img{
+    float: left;
+    height: 150px;
+}
+
 .btn-small {
     margin: 5px;
     padding: 10px;

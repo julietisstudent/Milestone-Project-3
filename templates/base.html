@@ -20,13 +20,18 @@
   </nav>
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Ruge+Boogie&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}" type="text/css" />
     </head>
     <body>
+      <div class="media">
+        <img src="static/images/images.png" class="responsive-img circle">
+      </div>
         <div class="container">
         <h1>RECIPES COOKBOOK</h1>
-        <p>Welcome to Recipes Cookbook, this is an online cookbook database where you can store and access recipes you would
-        like to make. Click on the relevant buttons to carry out your desired task.</p>
+        <p>"Welcome to Recipes Cookbook, this is an online cookbook database where you can store, access and edit recipes you would
+        like to make. Click on the relevant buttons to view and carry out your desired recipe function."</p>
+        
         {% block content %}
         {% endblock %}
         </div>
