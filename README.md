@@ -13,7 +13,8 @@ A live demo can be found [here](https://raw.githubusercontent.com/julietisstuden
 
 My goal in the design was to create a user friendly recipe storage web application, that was built for simplicity allowing all necessary 
 user functions that were inline with CRUD operations. To help start the design of the cookbook I wireframed 
-![alt text](https://github.com/julietisstudent/Milestone-Project-3/blob/master/static/images/images.png) layouts to create some ideas.
+![alt text](https://raw.githubusercontent.com/julietisstudent/Milestone-Project-3/master/static/images/Wireframes%20Pic.jpg)
+layouts to create some ideas.
 
 ## Technologies
 
