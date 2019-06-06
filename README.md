@@ -7,13 +7,13 @@ update cooking recipes.
 
 ## Demo
 
-A live demo can be found [here]()
+A live demo can be found [here](https://raw.githubusercontent.com/julietisstudent/Milestone-Project-3/master/static/images/images.png)
 
 ## UX
 
 My goal in the design was to create a user friendly recipe storage web application, that was built for simplicity allowing all necessary 
 user functions that were inline with CRUD operations. To help start the design of the cookbook I wireframed 
-![alternativetext](static/images/Wireframes Pic.jpg) layouts to create some ideas.
+![alt text](https://github.com/julietisstudent/Milestone-Project-3/blob/master/static/images/images.png) layouts to create some ideas.
 
 ## Technologies
 
@@ -49,8 +49,8 @@ Chrome developer tools was used against the site to check compatibility.
 
 ## Deployment
 
-The site has been deployed onto the Heroku and Github platforms. Version control was maintained by pushing new commits to the
-repository for each new updated piece of functionality. 
+The site has been deployed onto the Heroku platform. Version control was maintained by pushing new commits to the
+repository for each new updated piece of functionality using git and github.
 
 ## Credits
 
