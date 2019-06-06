@@ -7,7 +7,7 @@ update cooking recipes.
 
 ## Demo
 
-A live demo can be found [here](https://raw.githubusercontent.com/julietisstudent/Milestone-Project-3/master/static/images/images.png)
+A live demo can be found [here](https://recipe-cookbook-milestone.herokuapp.com/)
 
 ## UX
 
