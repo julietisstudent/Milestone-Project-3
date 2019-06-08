@@ -28,7 +28,7 @@ layouts to create some ideas.
      * To manipulate the Document Object Model
 * JavaScript
      * To create interactive data design
-* Python
+* Python3
      * To create and develop the web application
 * Flask
      * The microframework used for python
@@ -44,9 +44,14 @@ for use on multiple browsers and devices.
 
 The site was tested by inputing data recipes into the frontend web application, I then checked to see if the information fired through
 to the backend database MongoDB.Atlas and vice versa.
+
 All of the CRUD operations on the web application were checked through trial and data input.
 The site was also tested across multiple browers and mobile devices to ensure responsiveness.
 Chrome developer tools was used against the site to check compatibility.
+
+The flask framework for python was installed to check the web application ran properly each time throughout development stages.
+To install flask I used the command line interface on Cloud9 to install python3 and flask, I then imported flask into my app.py file,
+with the relevant port and host files in scripts. This then provided me with a server to run my application.
 
 ## Deployment
 
